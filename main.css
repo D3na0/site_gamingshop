@@ -4,29 +4,37 @@
     box-sizing: border-box;
 }
 
+@font-face {
+    font-family: 'Lemon';
+    src: url('./fonts/LEMONMILK-Bold.otf') format('opentype'), url('./fonts/LEMONMILK-Light.otf')format(opentype);
+    font-weight: bold;
+    font-style: normal;
+}
+
 header, 
 section h2,
 section h3,
 form button {
-    font-family: 'Bungee', cursive;
+    font-family:'Lemon';
     font-weight: normal;
 }
 
 body, input, textarea {
-    font-family: 'Roboto', sans-serif;
+    font-family: 'Lemon';
+    font-style: normal;
 }
 
 header{
     padding: 16px 0;
-    background-color: #182c61;
-    color: #ecf0f1;
+    background-color: #04924b;
+    color: #ffffff;
 }
 
 header nav li {
     display: inline;
     margin: 16px;
     color: #ecf0f1;
-    font-size: 18px;
+    font-size: 14px;
 }
 
 header nav li a {
@@ -38,6 +46,8 @@ header nav li a {
     max-width: 1200px;
     width: 100%;
     margin: 0 auto;
+    box-shadow: rgba(0, 0, 0, 0.17) 0px -23px 25px 0px inset, rgba(0, 0, 0, 0.15) 0px -36px 30px 0px inset, rgba(2, 141, 44, 0.1) 0px -79px 40px 0px inset, rgba(0, 0, 0, 0.06) 0px 2px 1px, rgba(0, 0, 0, 0.09) 0px 4px 2px, rgba(0, 0, 0, 0.09) 0px 8px 4px, rgba(0, 0, 0, 0.09) 0px 16px 8px, rgba(0, 0, 0, 0.09) 0px 32px 16px;
+    border-radius: 50px;
 }
 
 header .container,
@@ -45,13 +55,6 @@ section .container {
     display: flex;
     align-items: center;
     justify-content: space-between;
-}
-.brands-list img {
-    height: 24px;
-}
-.brands-list li{
-    display: inline;
-    margin-right: 8px;
 }
 
 section .container {
@@ -67,7 +70,7 @@ section h2 {
 }
 
 section {
-    color: #182c61;
+    color: #262629;
 }
 
 section p {
@@ -119,14 +122,14 @@ section h3{
 }
 
 form button{
-    background-color: #182c61;
+    background-color: #159254;
     color: #fff;
     border: none;
     cursor: pointer;
 }
 
 form button:hover{
-    background-color: #314e9e;
+    background-color: #04924b;
 }
 
 
@@ -135,7 +138,8 @@ input:focus, textarea:focus{
 }
 
 footer{
-    background-color: #182c61;
+    background-color: #262629;
     color: #ecf0f1;
     padding: 16px 0;
+    text-align: center;
 }
